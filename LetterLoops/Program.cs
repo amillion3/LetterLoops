@@ -6,7 +6,16 @@ namespace LetterLoops
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Please input a string.");
+            string inputString = Console.ReadLine();
+            char[] splitChars = inputString.ToCharArray();
+            foreach (var letter in splitChars)
+            {
+                Console.WriteLine($"Letter: {letter}");
+            }
+
+            Console.WriteLine(splitChars[0]);
+            Console.ReadLine();
         }
     }
 }
